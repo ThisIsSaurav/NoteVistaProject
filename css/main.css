@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header-box{
+    /* border: 1px solid red; */
+    height: 90vh;
+    background-image: url(../img/home_page_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: "Acme", sans-serif;
+}
+
+/* CSS for the home page header box nav bar  */
+.header-box nav{
+    /* border : 1px solid blue; */
+    padding: 10px 0px;
+}
+.header-box nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border : 1px solid black; */
+    color: white;
+}
+.header-box nav ul li{
+   padding: 5px 25px;
+   list-style: none;
+}
+.header-box nav ul li img{
+   width: 30px;
+}
+
+/* CSS for the home page header box main area (Below nav bar) */
+.header-box-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border : 1px solid red; */
+    height: 70vh;
+}
+.header-box-main h1{ 
+   font-size: 80px;
+   color: #FFDC25;
+}
+.header-box-main p{ 
+   font-size: 20px;
+   text-align: center;
+   color: white;
+   width: 400px;
+}
+.header-box-main .user-btns{ 
+    /* border : 1px solid violet; */
+    margin-top: 12px;
+    display: flex;
+    gap: 12px;
+}
+.header-box-main .user-btns button{ 
+    padding: 10px 35px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-family: "Acme", sans-serif;
+}
+#register-btn{
+    background-color: #FF4343;
+}
+#login-btn{
+    background-color: #1254FF;
+}
