@@ -3,3 +3,11 @@
     justify-content: center;
     align-items: center;
 }
+
+
+:root{
+    --yellow-web-color : #FFDC25;
+    --red-web-color : #FF4343;
+    --blue-web-color : #1254FF;
+    --my-font:"Acme", sans-serif;
+}

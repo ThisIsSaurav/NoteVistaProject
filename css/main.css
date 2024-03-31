@@ -1,118 +1,229 @@
-/* Importing the 'Acme' font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/bg.jpg);
+    /* background-size: cover; */
+}
 
-/* Resetting default margin and padding */
-*{
+/* Styling for the feature section in main section  */
+.features-section {
+    /* border : 1px solid blue; */
+    background-color: white;
+    border-radius: 12px;
+    margin-top: 15px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.features-section span {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    font-family: var(--my-font);
+    font-size: 25px;
+}
+
+.features-box {
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    /* gap: 30px; */
+    padding: 12px 0px;
+}
+
+.features-box-img {
+    /* border : 1px solid red; */
+    width: 35%;
+    text-align: center;
+}
+
+.features-box-text {
+    /* border : 1px solid black; */
+    padding: 15px 10px;
+    width: 32%;
+}
+
+.features-box-text h1 {
+    margin-top: 12px;
+}
+
+.features-box-text p {
+    margin-top: 12px;
+    width: 100%;
+    color: #616161;
+}
+
+.features-box img {
+    width: 400px;
+    border-radius: 12px;
+}
+
+
+/* Styling for the about section in main section  */
+
+.about-section {
+    /* border : 1px solid blue; */
+    background-color: white;
+    border-radius: 12px;
+    margin-top: 20px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section span {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    font-family: var(--my-font);
+    font-size: 25px;
+}
+
+.about-section .about-box-intro {
+    text-align: center;
+    width: 80%;
+    color: #616161;
+}
+
+.team-container {
+    display: flex;
+    /* border : 1px solid red; */
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.team-box {
+    border: 1px solid black;
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.team-box-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-color: lightblue;
+}
+
+.team-box-text {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-box h2 {
     margin: 0;
     padding: 0;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-/* Styling for the header box */
-.header-box{
-    height: 500px; /* Setting a fixed height for the header box */
-    background-image: url(../img/home_page_bg.jpg); /* Background image for the header box */
-    background-size: cover; /* Cover the entire header box with the background image */
-    background-position: center; /* Position the background image in the center */
-    font-family: "Acme", sans-serif; /* Using the 'Acme' font for the text */
+.team-box p {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    width: 80%;
+    line-height: 20px;
+    text-align: center;
 }
 
-/* Styling for the navigation bar within the header box */
-.header-box nav{
-    padding: 15px 0px; /* Adding padding to the navigation bar */
+
+/* Styling for the contact section in main section  */
+
+.contact-section {
+    /* border: 1px solid blue; */
+    background-color: white;
+    border-radius: 12px;
+    margin-top: 20px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Styling for the user icon in the navigation bar (not visible by default) */
-.header-box nav #second{
-    display: none; /* Initially hiding the second item in the navigation bar */
-}
-.header-box nav #second .user-icon{
-    filter: invert(1); /* Inverting the color of the user icon */
-}
-
-/* Styling for the list items in the navigation bar */
-.header-box nav ul {
-    display: flex; /* Displaying the list items horizontally */
-    justify-content: center; /* Centering the list items */
-    align-items: center; /* Aligning the list items vertically */
-    color: white; /* Setting the text color to white */
-}
-.header-box nav ul li{
-    padding: 5px 25px; /* Adding padding to the list items */
-    list-style: none; /* Removing default list styles */
-}
-.header-box nav ul li img{
-    width: 30px; /* Setting the width of the user icon */
+.contact-section span {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    font-family: var(--my-font);
+    font-size: 25px;
 }
 
-/* Styling for the main content within the header box */
-.header-box-main{
-    display: flex; /* Displaying the main content vertically centered */
-    flex-direction: column; /* Stacking the main content vertically */
-    justify-content: center; /* Centering the main content vertically */
-    align-items: center; /* Centering the main content horizontally */
-    height: 70%; /* Taking up 70% of the height of the header box */
-}
-.header-box-main h1{ 
-    font-size: 80px; /* Setting the font size for the main heading */
-    color: #FFDC25; /* Setting the text color to yellow */
-}
-.header-box-main p{ 
-    font-size: 20px; /* Setting the font size for the paragraph */
-    text-align: center; /* Centering the text */
-    color: white; /* Setting the text color to white */
-    width: 400px; /* Limiting the width of the paragraph */
-}
-.header-box-main .user-btns{ 
-    margin-top: 12px; /* Adding margin to the user buttons */
-    display: flex; /* Displaying the buttons horizontally */
-    gap: 12px; /* Adding gap between the buttons */
-}
-.header-box-main .user-btns button{ 
-    padding: 10px 35px; /* Adding padding to the buttons */
-    border: none; /* Removing borders */
-    border-radius: 6px; /* Adding border radius */
-    color: white; /* Setting the text color to white */
-    font-family: "Acme", sans-serif; /* Using the 'Acme' font for the buttons */
-}
-#register-btn{
-    background-color: #FF4343; /* Setting background color for the register button */
-}
-#login-btn{
-    background-color: #1254FF; /* Setting background color for the login button */
+.contact-section .contact-box-intro {
+    text-align: center;
+    width: 80%;
+    color: #616161;
+    
 }
 
-/* Media queries for responsiveness */
-
-@media screen and (max-width: 768px) {
-    /* Adjustments for smaller screens */
-    .header-box-main h1{
-        font-size: 60px; /* Reducing the font size of the main heading */
-    }
-    .header-box-main p{
-        width: 300px; /* Adjusting the width of the paragraph */
-    }
-}
-@media screen and (max-width: 540px) {
-    /* Adjustments for smaller screens */
-    .header-box nav #first{
-        display: none; /* Hiding the first item in the navigation bar */
-    }
-    .header-box nav #second{
-        display: block; /* Displaying the second item in the navigation bar */
-        display: flex; /* Displaying it as a flex container */
-        justify-content: space-between; /* Spacing items evenly */
-    }
-    .header-box nav ul {
-        width: 100%; /* Setting the width of the list to 100% */
-    }
+.contact-box {
+    display: flex;
+    width: 100%;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
 }
 
-@media screen and (max-width: 480px) {
-    /* Further adjustments for even smaller screens */
-    .header-box-main h1{
-        font-size: 40px; /* Further reducing the font size of the main heading */
-    }
-    .header-box-main p{
-        width: 250px; /* Further adjusting the width of the paragraph */
-    }
+.contact-box {
+    border: 1px solid400pxe;
+}
+
+.contact-box-img img {
+    width: 400px;
+}
+
+.contact-box-form {
+    padding: 12px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+.contact-box-form span {
+    font-size: 15px;
+    padding: 0px;
+    color: #616161;
+}
+
+.contact-box-form input {
+    width: 400px;
+    height: 35px;
+    padding: 0px 4px;
+    margin: 10px 0px 10px 0px;
+}
+
+#form-submit-btn {
+    width: 100px;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--blue-web-color);
+    color: white;
+    font-family: var(--my-font);
+}
+
+.contact-box-form textarea {
+    width: 399px;
+    height: 123px;
+    resize: none;
+    padding: 2px 3px;
+    margin: 10px 0px 10px 0px;
 }

@@ -1,0 +1,119 @@
+/* Importing the 'Acme' font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+/* Resetting default margin and padding */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Styling for the header box */
+.header-box{
+    height: 500px; /* Setting a fixed height for the header box */
+    background-image: url(../img/home_page_bg.jpg); /* Background image for the header box */
+    background-size: cover; /* Cover the entire header box with the background image */
+    background-position: center; /* Position the background image in the center */
+    font-family: var(--my-font) /* Using the 'Acme' font for the text */
+}
+
+/* Styling for the navigation bar within the header box */
+.header-box nav{
+    padding: 15px 0px; /* Adding padding to the navigation bar */
+}
+
+/* Styling for the user icon in the navigation bar (not visible by default) */
+.header-box nav #second{
+    display: none; /* Initially hiding the second item in the navigation bar */
+}
+.header-box nav #second .user-icon{
+    filter: invert(1); /* Inverting the color of the user icon */
+}
+
+/* Styling for the list items in the navigation bar */
+.header-box nav ul {
+    display: flex; /* Displaying the list items horizontally */
+    justify-content: center; /* Centering the list items */
+    align-items: center; /* Aligning the list items vertically */
+    color: white; /* Setting the text color to white */
+}
+.header-box nav ul li{
+    padding: 5px 25px; /* Adding padding to the list items */
+    list-style: none; /* Removing default list styles */
+}
+.header-box nav ul li img{
+    width: 30px; /* Setting the width of the user icon */
+}
+
+/* Styling for the main content within the header box */
+.header-box-main{
+    display: flex; /* Displaying the main content vertically centered */
+    flex-direction: column; /* Stacking the main content vertically */
+    justify-content: center; /* Centering the main content vertically */
+    align-items: center; /* Centering the main content horizontally */
+    height: 70%; /* Taking up 70% of the height of the header box */
+}
+.header-box-main h1{ 
+    font-size: 80px; /* Setting the font size for the main heading */
+    color: var(--yellow-web-color); /* Setting the text color to yellow */
+}
+.header-box-main p{ 
+    font-size: 20px; /* Setting the font size for the paragraph */
+    text-align: center; /* Centering the text */
+    color: white; /* Setting the text color to white */
+    width: 400px; /* Limiting the width of the paragraph */
+}
+.header-box-main .user-btns{ 
+    margin-top: 12px; /* Adding margin to the user buttons */
+    display: flex; /* Displaying the buttons horizontally */
+    gap: 12px; /* Adding gap between the buttons */
+}
+.header-box-main .user-btns button{ 
+    padding: 10px 35px; /* Adding padding to the buttons */
+    border: none; /* Removing borders */
+    border-radius: 6px; /* Adding border radius */
+    color: white; /* Setting the text color to white */
+    font-family: "Acme", sans-serif; /* Using the 'Acme' font for the buttons */
+}
+#register-btn{
+    background-color: var(--red-web-color); /* Setting background color for the register button */
+}
+#login-btn{
+    background-color: var(--blue-web-color); /* Setting background color for the login button */
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .header-box-main h1{
+        font-size: 60px; /* Reducing the font size of the main heading */
+    }
+    .header-box-main p{
+        width: 300px; /* Adjusting the width of the paragraph */
+    }
+}
+@media screen and (max-width: 540px) {
+    /* Adjustments for smaller screens */
+    .header-box nav #first{
+        display: none; /* Hiding the first item in the navigation bar */
+    }
+    .header-box nav #second{
+        display: block; /* Displaying the second item in the navigation bar */
+        display: flex; /* Displaying it as a flex container */
+        justify-content: space-between; /* Spacing items evenly */
+    }
+    .header-box nav ul {
+        width: 100%; /* Setting the width of the list to 100% */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Further adjustments for even smaller screens */
+    .header-box-main h1{
+        font-size: 40px; /* Further reducing the font size of the main heading */
+    }
+    .header-box-main p{
+        width: 250px; /* Further adjusting the width of the paragraph */
+    }
+}
