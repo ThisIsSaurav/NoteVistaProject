@@ -88,36 +88,3 @@
 
 /* Media queries for responsiveness */
 
-@media screen and (max-width: 768px) {
-    /* Adjustments for smaller screens */
-    .header-box-main h1{
-        font-size: 60px; /* Reducing the font size of the main heading */
-    }
-    .header-box-main p{
-        width: 300px; /* Adjusting the width of the paragraph */
-    }
-}
-@media screen and (max-width: 540px) {
-    /* Adjustments for smaller screens */
-    .header-box nav #first{
-        display: none; /* Hiding the first item in the navigation bar */
-    }
-    .header-box nav #second{
-        display: block; /* Displaying the second item in the navigation bar */
-        display: flex; /* Displaying it as a flex container */
-        justify-content: space-between; /* Spacing items evenly */
-    }
-    .header-box nav ul {
-        width: 100%; /* Setting the width of the list to 100% */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    /* Further adjustments for even smaller screens */
-    .header-box-main h1{
-        font-size: 40px; /* Further reducing the font size of the main heading */
-    }
-    .header-box-main p{
-        width: 250px; /* Further adjusting the width of the paragraph */
-    }
-}
