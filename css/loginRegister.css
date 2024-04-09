@@ -1,0 +1,142 @@
+/* Login CSS  */
+
+.login-container{
+    border : 1px solid grey;
+    box-shadow: 6px 7px 8px grey;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+.login-container .title{
+    border : 2px solid white;
+    color: white;
+    border-radius: 12px;
+    background-color: #4545ff;
+    text-align: center;
+    padding: 5px 0px;
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: 600;
+}
+.login-container span{
+    padding: 10px 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    color: #202020;
+}
+.login-container input{
+    padding: 8px 6px;
+    font-size: 16px;
+    font-family: sans-serif;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.login-container #submit-btn{
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: #4545ff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+}
+.login-container #submit-btn:hover{
+   background-color: white;
+   border: 1px solid black;
+   color: black;
+   transition: all 0.2s;
+}
+
+.login-container :last-child{
+    /* border : 1px solid green; */
+    text-align: center;
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #202020;
+}
+.login-container :last-child a{
+    color: #4545ff;
+}
+
+.login-container #remember-btn label{
+    cursor: pointer;
+}
+.login-container #remember-btn input{
+    cursor: pointer;
+}
+
+/* Register CSS  */
+
+/* *{margin: 0;padding: 0;} */
+
+.signup-container{
+    border : 1px solid grey;
+    box-shadow: 6px 7px 8px grey;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+.signup-container .title{
+    border : 2px solid white;
+    color: white;
+    border-radius: 12px;
+    background-color: #4545ff;
+    text-align: center;
+    padding: 5px 0px;
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: 600;
+}
+.signup-container span{
+    padding: 10px 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    color: #202020;
+}
+.signup-container input{
+    padding: 8px 6px;
+    font-size: 16px;
+    font-family: sans-serif;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.signup-container #submit-btn{
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: #4545ff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+}
+.signup-container #submit-btn:hover{
+   background-color: white;
+   border: 1px solid black;
+   color: black;
+   transition: all 0.2s;
+}
+
+.signup-container :last-child{
+    /* border : 1px solid green; */
+    text-align: center;
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #202020;
+}
+.signup-container :last-child a{
+    color: #4545ff;
+}
