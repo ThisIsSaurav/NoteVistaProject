@@ -86,5 +86,44 @@
     background-color: var(--blue-web-color); /* Setting background color for the login button */
 }
 
-/* Media queries for responsiveness */
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+
+/* Header of Contact Page  */
+.contact-header{
+    font-family: var(--my-font); /* Using the 'Acme' font for the text */
+    /* background-color: var(--blue-web-color); */
+    background-image: url(../img/bg.jpg);
+}
+
+/* Styling for the navigation bar within the header box */
+.contact-header nav{
+    padding: 8px 0px; /* Adding padding to the navigation bar */
+}
+
+/* Styling for the user icon in the navigation bar (not visible by default) */
+.contact-header nav #second{
+    display: none; /* Initially hiding the second item in the navigation bar */
+}
+.contact-header nav #second .user-icon{
+    filter: invert(1); /* Inverting the color of the user icon */
+}
+
+/* Styling for the list items in the navigation bar */
+.contact-header nav ul {
+    display: flex; /* Displaying the list items horizontally */
+    justify-content: center; /* Centering the list items */
+    align-items: center; /* Aligning the list items vertically */
+}
+.contact-header nav ul li{
+    padding: 5px 25px; /* Adding padding to the list items */
+    list-style: none; /* Removing default list styles */
+}
+.contact-header nav ul a{
+    text-decoration: none;
+    color: white;
+}
+.contact-header nav ul li img{
+    width: 30px; /* Setting the width of the user icon */
+}
 

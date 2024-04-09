@@ -147,10 +147,10 @@ main {
 /* Styling for the contact section in main section  */
 
 .contact-section {
-    /* border: 1px solid blue; */
     background-color: white;
+    /* border: 1px solid blue; */
     border-radius: 12px;
-    margin-top: 40px;
+    margin-top: 15px;
     width: 95%;
     display: flex;
     flex-direction: column;
@@ -179,12 +179,12 @@ main {
     /* justify-content: space-evenly; */
     justify-content: center;
     gap: 50px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-.contact-box {
-    border: 1px solid400pxe;
-}
+/* .contact-box {
+    border: 1px solid red;
+} */
 
 .contact-box-img img {
     width: 400px;
