@@ -1,33 +1,121 @@
-@media screen and (max-width: 768px) {
-    /* Adjustments for smaller screens */
-    .header-box-main h1{
-        font-size: 60px; /* Reducing the font size of the main heading */
+/* Media query for screens up to 1000px width */
+@media (max-width: 1000px) {
+    /* Adjusts padding and alignment for .features-box */
+    .features-box {
+        padding: 12px 0px;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
     }
-    .header-box-main p{
-        width: 300px; /* Adjusting the width of the paragraph */
+
+    /* Adjusts padding and width for text within .features-box */
+    .features-box-text {
+        padding: 15px 10px;
+        width: 78%;
     }
-}
-@media screen and (max-width: 540px) {
-    /* Adjustments for smaller screens */
-    .header-box nav #first{
-        display: none; /* Hiding the first item in the navigation bar */
-    }
-    .header-box nav #second{
-        display: block; /* Displaying the second item in the navigation bar */
-        display: flex; /* Displaying it as a flex container */
-        justify-content: space-between; /* Spacing items evenly */
-    }
-    .header-box nav ul {
-        width: 100%; /* Setting the width of the list to 100% */
+
+    /* Sets width and border radius for images within .features-box */
+    .features-box-img {
+        width: 80%;
+        border-radius: 20px;
     }
 }
 
-@media screen and (max-width: 480px) {
-    /* Further adjustments for even smaller screens */
-    .header-box-main h1{
-        font-size: 40px; /* Further reducing the font size of the main heading */
+@media (max-width : 940px){
+    .contact-box-img{
+        display: none;
     }
-    .header-box-main p{
-        width: 250px; /* Further adjusting the width of the paragraph */
+
+    .contact-box-form {
+        width: 75%;
+    }
+
+    .contact-box-form input {
+        width: 90%;
+    }
+
+    .contact-box-form textarea {
+        width: 90%;
+    }
+}
+
+/* Media query for screens up to 768px width */
+@media (max-width: 768px) {
+    /* Reduces font size of main heading */
+    .header-box-main h1 {
+        font-size: 60px;
+    }
+
+    /* Adjusts width of paragraph */
+    .header-box-main p {
+        width: 300px;
+    }
+
+    /* Changes layout to column direction and adjusts gap */
+    .features-box {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* Centers images and adjusts width */
+    .features-box-img {
+        width: 80%;
+        text-align: center;
+    }
+
+    /* Adjusts padding and width for text within .features-box */
+    .features-box-text {
+        padding: 15px 10px;
+        width: 78%;
+    }
+
+    /* Adds margin and color to text within .features-box-text */
+    .features-box-text h1 {
+        margin-top: 12px;
+    }
+
+    /* Adds margin and color to text within .features-box-text */
+    .features-box-text p {
+        margin-top: 12px;
+        color: #616161;
+    }
+
+    /* Sets image width to 100% with border radius */
+    .features-box-img img {
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+/* Media query for screens up to 540px width */
+@media screen and (max-width: 540px) {
+    /* Hides the first item in the navigation bar */
+    .header-box nav #first {
+        display: none;
+    }
+
+    /* Displays and styles the second item as flex with space between */
+    .header-box nav #second {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Sets width of navigation list to 100% */
+    .header-box nav ul {
+        width: 100%;
+    }
+}
+
+/* Media query for screens up to 480px width */
+@media screen and (max-width: 480px) {
+    /* Further reduces font size of main heading */
+    .header-box-main h1 {
+        font-size: 40px;
+    }
+
+    /* Further adjusts width of paragraph */
+    .header-box-main p {
+        width: 250px;
     }
 }

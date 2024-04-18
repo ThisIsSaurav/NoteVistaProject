@@ -1,236 +1,373 @@
-body{
+/* Sets body position to relative */
+body {
     position: relative;
 }
+
+/* Styles main section */
 main {
+    /* Centers its contents horizontally and vertically */
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Stacks its contents vertically */
     flex-direction: column;
+    /* Sets background image */
     background-image: url(../img/bg.jpg);
-    /* background-size: cover; */
 }
 
-/* Styling for the feature section in main section  */
+/* Styling for the feature section within main */
 .features-section {
-    /* border : 1px solid blue; */
+    /* Adds a blue border around the section */
+    border: 1px solid blue;
+    /* Sets background color to white */
     background-color: white;
+    /* Adds rounded corners */
     border-radius: 12px;
+    /* Adds space above the section */
     margin-top: 15px;
+    /* Adds space below the content */
     padding-bottom: 50px;
+    /* Sets width to 95% of the container */
     width: 95%;
+    /* Centers contents vertically */
     display: flex;
+    align-items: center;
+    /* Stacks contents vertically */
     flex-direction: column;
+    /* Adds space between child elements */
+    gap: 15px;
 }
 
+/* Styles spans within the feature section */
 .features-section span {
-    display: block;
+    /* Centers text horizontally */
     text-align: center;
+    /* Adds padding around text */
     padding: 12px;
+    /* Sets font family */
     font-family: var(--my-font);
+    /* Sets font size */
     font-size: 25px;
 }
 
+/* Styles feature boxes */
 .features-box {
+    /* Adds a border around the box */
+    border: 1px solid #b5b5b5a9;
+    /* Adds rounded corners */
+    border-radius: 12px;
+    /* Centers contents horizontally */
     display: flex;
-    justify-content: space-evenly;
-    /* flex-wrap: wrap; */
-    /* gap: 30px; */
+    justify-content: center;
+    align-items: center;
+    /* Allows contents to wrap */
+    flex-wrap: wrap;
+    /* Adds space between child elements */
+    gap: 50px;
+    /* Adds padding above and below */
     padding: 12px 0px;
+    /* Sets width to 90% of the container */
+    width: 90%;
+    /* Adds shadow effect */
+    box-shadow: 3px 2px #b5b5b5;
 }
 
+/* Styles the images within feature boxes */
 .features-box-img {
-    /* border : 1px solid red; */
-    width: 35%;
+    /* Sets image width */
+    width: 25%;
+    /* Centers content horizontally */
     text-align: center;
 }
 
+/* Styles the text within feature boxes */
 .features-box-text {
-    /* border : 1px solid black; */
+    /* Adds padding around text */
     padding: 15px 10px;
-    width: 32%;
+    /* Sets width to 50% of the container */
+    width: 50%;
 }
 
+/* Styles headings within feature boxes */
 .features-box-text h1 {
+    /* Adds space above heading */
     margin-top: 12px;
 }
 
+/* Styles paragraphs within feature boxes */
 .features-box-text p {
+    /* Adds space above paragraph */
     margin-top: 12px;
-    width: 100%;
+    /* Sets text color */
     color: #616161;
 }
 
+/* Styles images within feature boxes */
 .features-box img {
-    width: 400px;
-    border-radius: 12px;
+    /* Sets image width to fill its container */
+    width: 100%;
+    /* Adds rounded corners */
+    border-radius: 20px;
 }
 
-
-/* Styling for the about section in main section  */
-
+/* Styling for the about section within main */
 .about-section {
-    /* border : 1px solid blue; */
+    /* Sets background color to white */
     background-color: white;
+    /* Adds rounded corners */
     border-radius: 12px;
+    /* Adds space above the section */
     margin-top: 20px;
+    /* Sets width to 95% of the container */
     width: 95%;
+    /* Centers contents vertically */
     display: flex;
+    /* Stacks contents vertically */
     flex-direction: column;
+    /* Centers contents horizontally */
     justify-content: center;
     align-items: center;
+    /* Adds space below the content */
+    margin-bottom: 20px;
 }
 
+/* Styles spans within the about section */
 .about-section span {
-    display: block;
+    /* Centers text horizontally */
     text-align: center;
+    /* Adds padding around text */
     padding: 12px;
+    /* Sets font family */
     font-family: var(--my-font);
+    /* Sets font size */
     font-size: 25px;
 }
 
+/* Styles introduction text within the about section */
 .about-section .about-box-intro {
+    /* Centers text horizontally */
     text-align: center;
+    /* Sets width to 80% of the container */
     width: 80%;
+    /* Sets text color */
     color: #616161;
 }
 
+/* Styles team container */
 .team-container {
+    /* Centers contents horizontally */
     display: flex;
-    /* border : 1px solid red; */
-    justify-content: center;
+    /* Adds space above the section */
     margin-top: 25px;
+    /* Adds space below the content */
     margin-bottom: 35px;
+    /* Centers contents horizontally */
+    justify-content: center;
 }
 
+/* Styles team boxes */
 .team-box {
+    /* Adds a border around the box */
     border: 1px solid black;
+    /* Sets width of the box */
     width: 200px;
+    /* Sets height of the box */
     height: 250px;
+    /* Adds margin around the box */
     margin: 10px;
+    /* Centers contents vertically */
     display: flex;
+    /* Stacks contents vertically */
     flex-direction: column;
+    /* Centers contents horizontally */
     align-items: center;
+    /* Centers contents vertically */
     justify-content: center;
+    /* Centers text horizontally */
     text-align: center;
+    /* Adds shadow effect */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Styles team images */
 .team-box-img img {
+    /* Sets image width */
     width: 150px;
+    /* Sets image height */
     height: 150px;
+    /* Adds rounded corners */
     border-radius: 50%;
+    /* Adds margin below the image */
     margin-bottom: 10px;
+    /* Sets background color for the image */
     background-color: lightblue;
 }
 
+/* Styles text within team boxes */
 .team-box-text {
+    /* Sets width to 90% of the container */
     width: 90%;
+    /* Centers contents vertically */
     display: flex;
+    /* Stacks contents vertically */
     flex-direction: column;
+    /* Centers contents horizontally */
     align-items: center;
 }
 
+/* Styles headings within team boxes */
 .team-box h2 {
+    /* Resets margin and padding */
     margin: 0;
     padding: 0;
+    /* Sets font size */
     font-size: 18px;
+    /* Sets font weight to bold */
     font-weight: bold;
 }
 
+/* Styles paragraphs within team boxes */
 .team-box p {
+    /* Resets margin and padding */
     margin: 0;
     padding: 0;
+    /* Sets font size */
     font-size: 15px;
+    /* Sets width to 80% of the container */
     width: 80%;
+    /* Sets line height */
     line-height: 20px;
+    /* Centers text horizontally */
     text-align: center;
 }
 
-
-/* Styling for the contact section in main section  */
-
+/* Styling for the contact section within main */
 .contact-section {
+    /* Sets background color to white */
     background-color: white;
-    /* border: 1px solid blue; */
+    /* Adds rounded corners */
     border-radius: 12px;
+    /* Adds space above the section */
     margin-top: 15px;
+    /* Sets width to 95% of the container */
     width: 95%;
+    /* Centers contents vertically */
     display: flex;
+    /* Stacks contents vertically */
     flex-direction: column;
+    /* Centers contents horizontally */
     justify-content: center;
     align-items: center;
 }
 
+/* Styles spans within the contact section */
 .contact-section span {
-    display: block;
+    /* Centers text horizontally */
     text-align: center;
+    /* Adds padding around text */
     padding: 12px;
+    /* Sets font family */
     font-family: var(--my-font);
+    /* Sets font size */
     font-size: 25px;
 }
 
+/* Styles introduction text within the contact section */
 .contact-section .contact-box-intro {
+    /* Centers text horizontally */
     text-align: center;
+    /* Sets width to 80% of the container */
     width: 80%;
+    /* Sets text color */
     color: #616161;
-    
+    font-size: 1em;
 }
 
+/* Styles contact boxes */
 .contact-box {
+    /* Centers contents horizontally */
     display: flex;
+    /* Sets width to 100% of the container */
     width: 100%;
-    /* justify-content: space-evenly; */
+    /* Centers contents horizontally */
+    align-items: center;
     justify-content: center;
+    /* Adds space between child elements */
     gap: 50px;
+    /* Adds space above the section */
     margin-top: 20px;
+    /* border : 1px solid red; */
 }
 
-/* .contact-box {
-    border: 1px solid red;
-} */
-
+/* Styles images within contact boxes */
 .contact-box-img img {
+    /* Sets image width */
     width: 400px;
 }
 
+/* Styles contact form */
 .contact-box-form {
+    width: 40%;
+    /* Adds padding around the form */
     padding: 12px;
+    /* Centers contents vertically */
     display: flex;
+    /* Aligns contents at the start */
     align-items: flex-start;
+    /* Stacks contents vertically */
     flex-direction: column;
-    /* border: 1px solid red; */
 }
 
+/* Styles spans within contact form */
 .contact-box-form span {
+    /* Sets font size */
     font-size: 15px;
+    /* Resets padding */
     padding: 0px;
+    /* Sets text color */
     color: #616161;
 }
 
+/* Styles input fields within contact form */
 .contact-box-form input {
-    width: 400px;
+    /* Sets input width */
+    width: 80%;
+    /* Sets input height */
     height: 35px;
+    /* Adds padding inside input */
     padding: 0px 4px;
-    margin: 10px 0px 10px 0px;
+    /* Adds margin around input */
+    margin: 10px 0px;
 }
 
+/* Styles submit button within contact form */
 #form-submit-btn {
+    /* Sets button width */
     width: 100px;
+    /* Adds padding inside button */
     padding: 8px;
+    /* Removes default button border */
     border: none;
+    /* Adds rounded corners */
     border-radius: 6px;
+    /* Sets background color */
     background-color: var(--blue-web-color);
+    /* Sets text color */
     color: white;
+    /* Sets font family */
     font-family: var(--my-font);
 }
 
+/* Styles textarea within contact form */
 .contact-box-form textarea {
-    width: 399px;
+    /* Sets textarea width */
+    width: 80%;
+    /* Sets textarea height */
     height: 123px;
+    /* Prevents resizing */
     resize: none;
+    /* Adds padding inside textarea */
     padding: 2px 3px;
-    margin: 10px 0px 10px 0px;
+    /* Adds margin around textarea */
+    margin: 10px 0px;
 }
-
-
-
