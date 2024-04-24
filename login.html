@@ -17,7 +17,7 @@
             <ul id="first">
                 <a href="index.html"><li>Home</li></a>
                 <a href=""><li>My Notes</li></a>
-                <li class="user-icon"><img src="img/user.png" alt=""></li>
+                <a href="login.html"><li class="user-icon"><img src="img/user.png" alt=""></li></a>
                 <a href="index.html"><li>About</li></a>
                 <a href="contact.html"><li>Contact us</li></a>
             </ul>
@@ -31,9 +31,9 @@
     <div class="container login-container">
         <div><h1 style="color: var(--blue-web-color);">Login Now</h1></div>
         <div>Enter your email :-</div>
-        <div><input type="email"></div>
+        <div><input type="email" required></div>
         <div>Enter password :-</div>
-        <div><input type="password"><button><img src="img/eye-icon.svg" alt="UH"></button></div>
+        <div><input type="password" required class="loginRegisterPass"><button class="eyeBtn"><img src="img/hide-eye-icon.png" alt="UH" class="eye-pic"></button></div>
         <div id="rememberMe"><span>Remember me</span><input type="checkbox"></div>
         <div class="container-btn"><input type="submit" value="Login"></div>
         <div class="alreadyLoginRegister">Don't have an account? <a href="register.html">&nbsp;&nbsp;&nbsp;Register</a></div>
@@ -46,5 +46,8 @@
             <div class="footer-child contact"><a href="contact.html" target="_blank">Contact us</a>:- notexvista@gmail.com</div>
         </div>
     </footer>
+
+
+    <script src="js/loginRegister.js"></script>
 </body>
 </html>
