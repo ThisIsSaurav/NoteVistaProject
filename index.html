@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Note Vista - This is the way</title>
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/utility.css">
     <link rel="stylesheet" href="css/loginRegister.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 
@@ -21,7 +21,7 @@
                 <ul id="first">
                     <a href="index.html"><li>Home</li></a>
                     <a href=""><li>My Notes</li></a>
-                    <li class="user-icon"><img src="img/user.png" alt=""></li>
+                    <a href="login.html"><li class="user-icon"><img src="img/user.png" alt=""></li></a>
                     <a href="about.html"><li>About</li></a>
                     <a href="contact.html"><li>Contact us</li></a>
                 </ul>
@@ -35,8 +35,8 @@
             <h1>NoteVista</h1>
             <p>Capture, organize, and excel with Notevista: Your ultimate note-taking companion.</p>
             <div class="user-btns">
-                <button id="register-btn">Register</button>
-                <button id="login-btn">Log in</button>
+                <a href="register.html"><button id="register-btn">Register</button></a>
+                <a href="login.html"><button id="login-btn">Log in</button></a>
             </div>
         </div>
 
@@ -89,12 +89,17 @@
                     <h2>Add, Edit, Delete, and Pin Notes</h2>
                     <p> Users can easily add new notes, edit existing ones, delete unwanted notes, and pin important notes to keep them easily accessible.</p>
                 </div>
-            </div>
-           
-          
-           
+            </div> 
         </div>
     </main>
+
+    <footer>
+        <div class="footer-section">
+            <div class="footer-child copyright">@2024 notevista.online</div>
+            <div class="footer-child registerLogin"><a href="#">Register</a> | <a href="#">Login</a></div>
+            <div class="footer-child contact"><a href="contact.html" target="_blank">Contact us</a>:- notexvista@gmail.com</div>
+        </div>
+    </footer>
 </body>
 
 </html>

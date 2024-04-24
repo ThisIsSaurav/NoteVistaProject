@@ -163,6 +163,8 @@ main {
     margin-bottom: 35px;
     /* Centers contents horizontally */
     justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 /* Styles team boxes */

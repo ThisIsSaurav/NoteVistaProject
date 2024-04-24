@@ -3,19 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Note Vista - Log in</title>
+    <title>Note Vista - Sign up</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/utility.css">
     <link rel="stylesheet" href="css/loginRegister.css">
+    <link rel="stylesheet" href="css/media.css">
+    
 </head>
 <body>
-    <div id="loginContainer">
-        <form action="#" class="login-container">
-            <div class="title">Note Vista</div>
-            <span>Enter your email :-</span><input type="email" required>
-            <span>Enter your password :-</span><input type="password" required>
-            <span id="remember-btn"><label for="rem">Remember me </label><input type="checkbox" id="rem"></span>
-            <input type="submit" id="submit-btn" value="Log in">
-            <div>Don't have an account? <a href="signup.html"> Create an account</a></div>
-        </form action="#">                         
+    <header class="register-header-box header-box">
+        <nav class="flex-justify-align-center">
+            <ul id="first">
+                <a href="index.html"><li>Home</li></a>
+                <a href=""><li>My Notes</li></a>
+                <li class="user-icon"><img src="img/user.png" alt=""></li>
+                <a href="index.html"><li>About</li></a>
+                <a href="contact.html"><li>Contact us</li></a>
+            </ul>
+            <ul id="second">
+                <li class="user-icon"><img src="img/bx-menu.svg" alt=""></li>
+                <li><img src="img/user.png" alt=""></li>
+            </ul>
+        </nav>
+    </header>    
+    <main>
+    <div class="container login-container">
+        <div><h1 style="color: var(--blue-web-color);">Login Now</h1></div>
+        <div>Enter your email :-</div>
+        <div><input type="email"></div>
+        <div>Enter password :-</div>
+        <div><input type="password"><button><img src="img/eye-icon.svg" alt="UH"></button></div>
+        <div id="rememberMe"><span>Remember me</span><input type="checkbox"></div>
+        <div class="container-btn"><input type="submit" value="Login"></div>
+        <div class="alreadyLoginRegister">Don't have an account? <a href="register.html">&nbsp;&nbsp;&nbsp;Register</a></div>
     </div>
+    </main>          
+    
+    <footer class="registerLoginfooter">
+        <div class="footer-section">
+            <div class="footer-child copyright">@2024 notevista.online</div>||
+            <div class="footer-child contact"><a href="contact.html" target="_blank">Contact us</a>:- notexvista@gmail.com</div>
+        </div>
+    </footer>
 </body>
 </html>

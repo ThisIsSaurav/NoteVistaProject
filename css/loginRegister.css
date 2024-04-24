@@ -1,168 +1,119 @@
-/* Login CSS  */
-#loginContainer {
-    position: absolute;
-    left: 37%;
-    top: 3%;
-    display: none;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.login-container {
-    border: 1px solid grey;
-    box-shadow: 6px 7px 8px grey;
+
+body {
+    background-image: url(../img/home_page_bg.jpg);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border : 1px solid red; */
+    padding: 10px 0px;
+}
+
+.container {
+    /* border : 1px solid red; */
+    background-color: white;
+    font-family: var(--my-font);
     display: flex;
     flex-direction: column;
-    width: 25vw;
-    padding: 30px 20px;
-    border-radius: 20px;
-    background-color: white;
+    padding: 3px 27px 15px 27px;
+    gap: 8px;
+    border-radius: 15px;
+    box-shadow: 6px 5px 17px #7d7d7d;
 }
 
-.login-container .title {
-    border: 2px solid white;
-    color: white;
-    border-radius: 12px;
-    background-color: #4545ff;
-    text-align: center;
-    padding: 5px 0px;
-    font-size: 25px;
-    font-family: cursive;
-    font-weight: 600;
+.login-container{
+    margin-top: 40px;
 }
-
-.login-container span {
-    padding: 10px 0px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 15px;
-    color: #202020;
-}
-
-.login-container input {
-    padding: 8px 6px;
-    font-size: 16px;
-    font-family: sans-serif;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid grey;
-}
-
-.login-container #submit-btn {
-    text-align: center;
-    font-size: 12px;
-    padding: 10px 15px;
-    margin-top: 15px;
-    cursor: pointer;
-    background-color: #4545ff;
-    color: white;
-    border: none;
-    border-radius: 12px;
-}
-
-.login-container #submit-btn:hover {
-    background-color: white;
-    border: 1px solid black;
-    color: black;
-    transition: all 0.2s;
-}
-
-.login-container :last-child {
-    /* border : 1px solid green; */
-    text-align: center;
-    margin-top: 15px;
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #202020;
-}
-
-.login-container :last-child a {
-    color: #4545ff;
-}
-
-.login-container #remember-btn label {
-    cursor: pointer;
-}
-
-.login-container #remember-btn input {
-    cursor: pointer;
-}
-
-/* Register CSS  */
-
-/* *{margin: 0;padding: 0;} */
-
-#registerContainer {
-    position: absolute;
-    left: 37%;
-    top: 3%;
-    display: none;
-}
-
-.signup-container {
-    border: 1px solid grey;
-    box-shadow: 6px 7px 8px grey;
+.container div {
+    color: #545454;
+    font-size: 14px;
     display: flex;
-    flex-direction: column;
-    width: 25vw;
-    padding: 30px 20px;
-    border-radius: 20px;
-    background-color: white;
+    align-items: center;
 }
 
-.signup-container .title {
-    border: 2px solid white;
-    color: white;
-    border-radius: 12px;
-    background-color: #4545ff;
+.container div h1 {
     text-align: center;
-    padding: 5px 0px;
+    padding: 12px 0px;
     font-size: 25px;
-    font-family: cursive;
-    font-weight: 600;
 }
 
-.signup-container span {
-    padding: 10px 0px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 15px;
-    color: #202020;
-}
-
-.signup-container input {
-    padding: 8px 6px;
-    font-size: 16px;
-    font-family: sans-serif;
-    outline: none;
+.container div input {
+    width: 250px;
+    height: 30px;
+    padding: 0px 6px;
     border-radius: 5px;
     border: 1px solid grey;
+    outline: none;
 }
 
-.signup-container #submit-btn {
-    text-align: center;
-    font-size: 12px;
-    padding: 10px 15px;
-    margin-top: 15px;
-    cursor: pointer;
-    background-color: #4545ff;
+.container div button {
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+    background-color: var(--blue-web-color);
     color: white;
-    border: none;
-    border-radius: 12px;
+    padding: 5px 3px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    cursor: pointer;
 }
 
-.signup-container #submit-btn:hover {
-    background-color: white;
-    border: 1px solid black;
+.container div button img{
+    width: 20px;
+    /* filter: invert(1); */
+}
+
+.container div button:hover {
+    background-color: var(--yellow-web-color);
     color: black;
-    transition: all 0.2s;
+    transition: all 0.3s;
 }
 
-.signup-container :last-child {
-    /* border : 1px solid green; */
+.container-btn {
+    display: flex;
+    width: 50px;
+
+}
+
+.container-btn input {
+    background-color: var(--blue-web-color);
+    color: white;
+    cursor: pointer;
+}
+
+.container-btn input:hover {
+    background-color: var(--yellow-web-color);
+    color: black;
+    transition: all 0.3s;
+}
+
+.container div a {
+    text-decoration: none;
+    color: var(--blue-web-color);
+}
+
+.container div a:hover {
+    color: red;
+}
+
+.alreadyLoginRegister {
     text-align: center;
-    margin-top: 15px;
-    font-family: sans-serif;
-    font-size: 15px;
-    color: #202020;
+    padding: 5px 0px;
 }
 
-.signup-container :last-child a {
-    color: #4545ff;
+#rememberMe{
+    display: flex;
+    gap: 5px;
+
+}
+#rememberMe input{
+    width: 13px;
+    height: 13px;
 }
