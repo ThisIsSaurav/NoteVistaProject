@@ -128,7 +128,9 @@
     .container-btn input{
         font-size: 10px;
     }
+
 }
+
 
 /* Media query for screens up to 480px width */
 @media screen and (max-width: 480px) {

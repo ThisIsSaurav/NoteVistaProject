@@ -13,6 +13,7 @@ main {
     flex-direction: column;
     /* Sets background image */
     background-image: url(../img/bg.jpg);
+    font-family: var(--my-font);
 }
 
 /* Styling for the feature section within main */
@@ -45,7 +46,7 @@ main {
     /* Adds padding around text */
     padding: 12px;
     /* Sets font family */
-    font-family: var(--my-font);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /* Sets font size */
     font-size: 25px;
 }
@@ -89,9 +90,8 @@ main {
 }
 
 /* Styles headings within feature boxes */
-.features-box-text h1 {
-    /* Adds space above heading */
-    margin-top: 12px;
+.features-box-text h2 {
+    color: #3f3c43;
 }
 
 /* Styles paragraphs within feature boxes */
@@ -99,8 +99,14 @@ main {
     /* Adds space above paragraph */
     margin-top: 12px;
     /* Sets text color */
-    color: #616161;
+    color: #616161d7;
 }
+
+.features-box-text span{
+    font-size: 10px;
+    margin-left: -10px;
+}
+
 
 /* Styles images within feature boxes */
 .features-box img {

@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Note Vista - This is the way</title>
-    <link rel="stylesheet" href="css/utility.css">
     <link rel="stylesheet" href="css/loginRegister.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/hamMenu.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 
@@ -19,16 +20,18 @@
         <header>
             <nav class="flex-justify-align-center">
                 <ul id="first">
-                    <a href="index.html"><li>Home</li></a>
-                    <a href=""><li>My Notes</li></a>
-                    <a href="login.html"><li class="user-icon"><img src="img/user.png" alt=""></li></a>
-                    <a href="about.html"><li>About</li></a>
-                    <a href="contact.html"><li>Contact us</li></a>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">My Notes</a></li>
+                    <li class="user-icon"><a href="login.html"><img src="img/user.png" alt=""></a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
                 </ul>
                 <ul id="second">
                     <li class="user-icon"><img src="img/bx-menu.svg" alt=""></li>
-                    <li><img src="img/user.png" alt=""></li>
+                    <a href="login.html"></a><li><a href="login.html"><img src="img/user.png" alt=""></a></li>
                 </ul>
+
+               
             </nav>
         </header>
         <div class="header-box-main">
@@ -42,6 +45,14 @@
 
     </div>
 
+    <ul id="hamMenu" class="display-none">
+        <li id="hamTitle">notevista.online</li>
+        <a href="index.html"><li>Home</li></a>
+        <a href=""><li>My Notes</li></a>
+        <a href="about.html"><li>About</li></a>
+        <a href="contact.html"><li>Contact us</li></a>
+    </ul>
+
     <main>
         <div class="features-section">
             <span>Features</span>
@@ -52,6 +63,7 @@
                 <div class="features-box-text">
                     <h2>Login System</h2>
                     <p>Notevista offers a secure and convenient login system, allowing users to create accounts and access their notes from anywhere.</p>
+                    <span>Photo by <a href="https://unsplash.com/@mr_williams_photography?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Micah Williams</a> on <a href="https://unsplash.com/photos/black-and-gray-code-padlock-anchored-on-chain-link-fence-selective-focus-photo-lmFJOx7hPc4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></span>
                 </div>
             </div>
             <div class="features-box">
@@ -61,6 +73,8 @@
                 <div class="features-box-text">
                     <h2>Responsive Design</h2>
                     <p>Notevista is built with a responsive design, ensuring seamless functionality across various devices, including desktops, laptops, tablets, and smartphones.</p>
+                    <span>Photo by <a href="https://unsplash.com/@bugsster?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Taras Shypka</a> on <a href="https://unsplash.com/photos/person-holding-black-ipad-iFSvn82XfGo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></span>
+                    
                 </div>
             </div>
             <div class="features-box">
@@ -70,6 +84,7 @@
                 <div class="features-box-text">
                     <h2>Search and Navigation</h2>
                     <p> Notevista includes robust search and navigation capabilities, enabling users to quickly find specific notes or topics within their collection, enhancing productivity and saving time.</p>
+                    <span>Photo by <a href="https://unsplash.com/@markuswinkler?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Markus Winkler</a> on <a href="https://unsplash.com/photos/magnifying-glass-on-white-table-afW1hht0NSs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></span>
                 </div>
             </div>
             <div class="features-box">
@@ -79,6 +94,7 @@
                 <div class="features-box-text">
                     <h2>Data Security</h2>
                     <p>Notevista prioritizes data security and privacy, implementing encryption protocols and regular backups to safeguard users' notes and personal information.</p>
+                    <span>Photo by <a href="https://unsplash.com/@franckinjapan?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Franck</a> on <a href="https://unsplash.com/photos/black-iphone-5-on-yellow-textile-DoWZMPZ-M9s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></span>
                 </div>
             </div>
             <div class="features-box">
@@ -88,6 +104,7 @@
                 <div class="features-box-text">
                     <h2>Add, Edit, Delete, and Pin Notes</h2>
                     <p> Users can easily add new notes, edit existing ones, delete unwanted notes, and pin important notes to keep them easily accessible.</p>
+                    <span>Photo by <a href="https://unsplash.com/@honza_kahanek?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jan Kahánek</a> on <a href="https://unsplash.com/photos/shallow-focus-photography-of-pencil-on-book-g3O5ZtRk2E4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></span>
                 </div>
             </div> 
         </div>
@@ -96,10 +113,13 @@
     <footer>
         <div class="footer-section">
             <div class="footer-child copyright">@2024 notevista.online</div>
-            <div class="footer-child registerLogin"><a href="#">Register</a> | <a href="#">Login</a></div>
+            <div class="footer-child registerLogin"><a href="register.html">Register</a> | <a href="login.html">Login</a></div>
             <div class="footer-child contact"><a href="contact.html" target="_blank">Contact us</a>:- notexvista@gmail.com</div>
         </div>
     </footer>
+
+
+    <script src="js/hamburgerMenu.js"></script>
 </body>
 
 </html>

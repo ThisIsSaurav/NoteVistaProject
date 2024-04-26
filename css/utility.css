@@ -9,5 +9,18 @@
     --yellow-web-color : #FFDC25;
     --red-web-color : #FF4343;
     --blue-web-color : #1254FF;
+
     --my-font:"Acme", sans-serif;
+}
+.rotate-90{
+    transform: rotate(90deg);
+    transition: all 1s;
+}
+.rotate_-90{
+    transform: rotate(90deg);
+    transition: all 1s;
+}
+
+.display-none{
+    display: none;
 }

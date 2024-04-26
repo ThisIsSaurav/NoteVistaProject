@@ -1,0 +1,55 @@
+#hamMenu {
+    /* border : 1px solid red; */
+    background-color: #000000e3;
+    width: 60%;
+    border-radius: 0px 12px 12px 0px;
+    position: absolute;
+    top: 60px;
+    left: -240px;
+    color: white;
+}
+
+#hamMenu a {
+    text-decoration: none;
+    color: white;
+}
+
+#hamMenu a li {
+    /* border : 1px solid blue; */
+    padding: 30px 20px;
+    list-style: none;
+    border-radius: 12px;
+    font-family: var(--my-font);
+}
+#hamMenu a li:hover{
+    background-color: black;
+    color: var(--yellow-web-color);
+}
+
+#hamTitle{
+    padding: 15px 20px;
+    list-style: none;
+    font-family: var(--my-font);
+    color: var(--yellow-web-color);
+    font-size: 30px;
+    background-color: black;
+    border-radius: 0px 12px 0px 0px;
+}
+
+@keyframes hamAniIn {
+    0%{
+        left:-240px
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+@keyframes hamAniOut {
+    0%{
+        left:0px'
+    }
+    100%{
+        left: -240px;
+    }
+}

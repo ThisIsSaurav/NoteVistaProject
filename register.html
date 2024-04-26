@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/utility.css">
     <link rel="stylesheet" href="css/loginRegister.css">
+    <link rel="stylesheet" href="css/hamMenu.css">
     <link rel="stylesheet" href="css/media.css">
     
 </head>
@@ -15,18 +16,26 @@
     <header class="register-header-box header-box">
         <nav class="flex-justify-align-center">
             <ul id="first">
-                <a href="index.html"><li>Home</li></a>
-                <a href=""><li>My Notes</li></a>
-                <a href="login.html"><li class="user-icon"><img src="img/user.png" alt=""></li></a>
-                <a href="index.html"><li>About</li></a>
-                <a href="contact.html"><li>Contact us</li></a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">My Notes</a></li>
+                <li class="user-icon"><a href="login.html"><img src="img/user.png" alt=""></a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
             </ul>
             <ul id="second">
                 <li class="user-icon"><img src="img/bx-menu.svg" alt=""></li>
-                <li><img src="img/user.png" alt=""></li>
+                <a href="login.html"></a><li><a href="login.html"><img src="img/user.png" alt=""></a></li>
             </ul>
         </nav>
     </header>    
+
+    <ul id="hamMenu" class="display-none">
+        <li id="hamTitle">notevista.online</li>
+        <a href="index.html"><li>Home</li></a>
+        <a href=""><li>My Notes</li></a>
+        <a href="about.html"><li>About</li></a>
+        <a href="contact.html"><li>Contact us</li></a>
+    </ul>
     <main>
     <div class="container">
         <div><h1 style="color: var(--blue-web-color);">Register Now</h1></div>
@@ -52,5 +61,6 @@
 
 
     <script src="js/loginRegister.js"></script>
+    <script src="js/hamburgerMenu.js"></script>
 </body>
 </html>
