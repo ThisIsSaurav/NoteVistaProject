@@ -247,6 +247,7 @@ main {
     line-height: 20px;
     /* Centers text horizontally */
     text-align: center;
+    color: #7f7f7f;
 }
 
 /* Styling for the contact section within main */
