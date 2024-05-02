@@ -3,15 +3,21 @@ body{
     background-image: url(../../img/bg.jpg);
 }
 .container{
-    border : 1px solid red;
+    /* border : 1px solid red; */
     display: flex;
 }
 .container-child{
-    border : 1px solid blue;
-    padding: 10px;
+    /* border : 1px solid blue; */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height:98vh;
+    overflow-y: auto;
 }
 .container header{
     width: 15%;
+    padding: 5px;
 }
 .container main{
     width: 85%;
@@ -19,12 +25,12 @@ body{
 
 /* USER-SECTION OR USER NAME AND LOGOUT BUTTON SECTION  */
 .container .container-child .user-info{
-    border : 1px solid purple;
+    /* border : 1px solid purple; */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 8px 4px;
+    padding: 15px 4px;
     background-color: white;
     border-radius: 5px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -61,3 +67,73 @@ body{
     color: white;
     background-color: var(--red-web-color);
 }
+
+/* CSS FOR HEADER NAV BAR  */
+/* .menu-bar{
+    border : 1px solid chocolate;
+} */
+.menu-bar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.menu-bar ul li{
+    padding: 10px 5px;
+    /* border : 1px solid red; */
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.menu-bar ul li:hover{
+    background-color: var(--blue-web-color);
+    color: white;
+}
+.menu-bar ul li input{
+    width:100%;
+    height: 30px;
+    padding: 0px 5px;
+    border: none;
+    text-align: center;
+    outline: none;
+}
+
+#searchSection{
+    padding: 30px 5px;
+    text-align: start;
+}
+#searchSection:hover{
+    background-color: white;
+}
+/* CSS FOR NOTE VISTA INTRO IN MYNOTES SECTION  */
+#notevista{
+    padding: 25px 15px;
+
+}
+#notevista:hover{
+    background-color: white;
+}
+.menu-bar ul li div{
+    font-size: 30px;
+    color: var(--blue-web-color);
+}
+.menu-bar ul li div p{
+    font-size: 15px;
+    color: black;
+}
+
+.menu-bar ul li .shareBtn button{
+    width: 60px;
+    height: 25px;
+    background-color: var(--blue-web-color );
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.menu-bar ul li .shareBtn button:hover{
+    background-color: var(--red-web-color);
+    color: white;
+}
+

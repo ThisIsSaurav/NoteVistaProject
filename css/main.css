@@ -100,7 +100,7 @@ main {
     color: #616161d7;
 }
 
-.features-box-text span{
+.features-box-text span {
     font-size: 10px;
     margin-left: -10px;
 }
@@ -363,6 +363,11 @@ main {
     color: white;
     /* Sets font family */
     font-family: var(--my-font);
+    cursor: pointer;
+}
+
+#form-submit-btn:hover {
+    background-color: var(--red-web-color);
 }
 
 /* Styles textarea within contact form */

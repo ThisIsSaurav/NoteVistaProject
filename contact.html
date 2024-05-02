@@ -52,11 +52,14 @@
                 <div class="contact-box-img">
                     <img src="img/contact-gif.gif" alt="contact.png">
                 </div>
-                <form action="" class="contact-box-form">
+                <form class="contact-box-form" id="form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" id="access_key" value = "353de109-b2f2-47df-a445-7cc4f251f562">
+                    <input type="hidden" name="subject" value="New contact form submission">
+                    <input type="hidden" name="from_name" value="Contact Notification">
                     <span>Name :-</span>
-                    <input type="text" placeholder="Your Name...">
+                    <input type="text" placeholder="Your Name..." name="name" required>
                     <span>Email :-</span>
-                    <input type="text" placeholder="Your Name...">
+                    <input type="text" placeholder="Your Name..." name="email" required>
                     <span>Message :-</span>
                     <textarea name="msg" id="contact-msg" cols="30" rows="10"></textarea>
                     <input type="submit" id="form-submit-btn" value="Submit">
@@ -74,6 +77,12 @@
     </footer>
 
     <script src="js/hamburgerMenu.js"></script>
+    <script>
+        window.onload = function() {
+            // Reset the form fields when the page loads
+            document.getElementById("form").reset();
+        };
+    </script>
 </body>
 
 </html>

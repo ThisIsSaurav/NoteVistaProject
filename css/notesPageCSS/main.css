@@ -1,0 +1,91 @@
+/* CREATE NEW NOTE SECTION CSS  */
+.createNewNoteSection {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    color: gray;
+}
+
+.createNewNoteSection span {
+    font-size: 25px;
+}
+
+.createNewNoteSection button {
+    font-size: 12px;
+    padding: 10px 20px;
+    background-color: var(--blue-web-color);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.createNewNoteSection button:hover {
+    background-color: var(--red-web-color);
+    color: white;
+
+}
+
+.createNewNoteSection span textarea {
+    width: 902px;
+    height: 135px;
+    resize: none;
+    padding: 3px 3px;
+    border-radius: 5px;
+}
+
+
+/* CSS FOR OUR ALL NOTES SECTION  */
+
+.noteHeading{
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+
+.myAllNotesSection {
+    background-color: white;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.myAllNotesSection .noteCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--blue-web-color);
+}
+
+#noteTitle {
+    width: 200px;
+    height: 20px;
+    resize: none;
+    padding: 5px;
+}
+#note{
+    width: 200px;
+    height: 120px;
+    resize: none;
+    padding: 5px;
+}
+
+.myNoteBtns button{
+    padding: 3px 20px;
+    cursor: pointer;
+}
+.myNoteBtns button img{
+  width: 12px;
+  background-color: white;
+  mix-blend-mode: color-burn;
+}
