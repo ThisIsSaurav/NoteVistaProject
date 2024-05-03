@@ -9,7 +9,7 @@
     color: white;
 }
 
-#hamMenu a {
+#hamMenu a{
     text-decoration: none;
     color: white;
 }
@@ -21,8 +21,8 @@
     border-radius: 12px;
     font-family: var(--my-font);
 }
-#hamMenu a li:hover{
-    background-color: black;
+#hamMenu a li:hover {
+    background-color: rgb(15, 15, 15);
     color: var(--yellow-web-color);
 }
 
