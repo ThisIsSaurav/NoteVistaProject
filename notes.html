@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,142 +8,177 @@
     <link rel="stylesheet" href="css/utility.css">
     <link rel="stylesheet" href="css/notesPageCSS/header.css">
     <link rel="stylesheet" href="css/notesPageCSS/main.css">
+    <link rel="stylesheet" href="css/hamMenu.css">
+    <link rel="stylesheet" href="css/notesPageCSS/notesPageMedia.css">
 </head>
+
 <body>
     <div class="container">
         <header class="container-child">
             <div class="user-info">
-                <div class="user-info-img"><img src="img/user.png" alt="user-icon"></div>
-                <div class="user-info-text">
-                    <span id="user-name">Saurav</span>
-                    <span><button>Log out</button></span>
+                <div id="user-name">
+                    <div class="user-info-img"><img src="img/user.png" alt="user-icon"></div>
+                    <div class="user-info-text">
+                        <span id="user-name">Saurav</span>
+                        <span><button>Log out</button></span>
+                    </div>
+                </div>
+
+                <div>
+                    <li class="user-icon"><img src="img/bx-menu.svg" alt=""></li>
                 </div>
             </div>
 
             <div class="menu-bar">
                 <ul>
                     <li id="searchSection"><input type="search" placeholder="Search your notes..."></li>
-                    <li>Home</li>
-                    <li>Contact</li>
-                    <li>About us</li>
+                    <a href="home.html" target="_blank" class="noteNavItems">
+                        <li>Home</li>
+                    </a>
+                    <a href="contact.html" target="_blank" class="noteNavItems">
+                        <li>Contact</li>
+                    </a>
+                    <a href="about.html" target="_blank" class="noteNavItems">
+                        <li>About us</li>
+                    </a>
                     <li id="notevista">
                         <div>Note Vista</div>
-                        <div><p>Capture, organize, and excel with Notevista: Your ultimate note-taking companion.</p></div>
-                        <div class="shareBtn"><Button>Share</Button></div>
+                        <div>
+                            <p>Capture, organize, and excel with Notevista: Your ultimate note-taking companion.</p>
+                        </div><br>
+                        <div>
+                            <p style="color: rgb(99, 99, 99);">@2024 notevista.online</p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </header>
-        <main  class="container-child">
+        <main class="container-child">
             <div class="createNewNoteSection">
-                <!-- <span><textarea name="noteArea" id="newNote" cols="30" rows="10" placeholder="add your note..."></textarea></span> -->
-                <span>Add your note...</span>
-                <button>Add Note</button>
+                <span id="createNewBox-1" class="display-none">
+                    <textarea name="noteArea" id="newNoteTitle" placeholder="add your note title..."></textarea>
+                    <textarea name="noteArea" id="newNote" placeholder="add your note..."></textarea>
+                </span>
+                <span id="createNewBox-2">Add your note...</span>
+                <button id="createNoteBtn" title="Create notes">Create</button>
+                <button id="addNoteBtn" class="display-none" title="Add notes">Add</button>
             </div>
             <span class="noteHeading">Your Notes :-</span>
             <div class="myAllNotesSection">
                 <div class="noteCard">
-                    <textarea name="noteTitle" id="noteTitle" cols="30" rows="10"></textarea>
-                    <textarea name="note" id="note" cols="30" rows="10"></textarea>
+                    <textarea name="noteTitle" id="noteTitle" cols="30" rows="10" readonly></textarea>
+                    <textarea name="note" id="note" cols="30" rows="10" readonly></textarea>
                     <div class="myNoteBtns">
-                        <button id="deleteNoteBtn"><img src="img/recycle-bin-icon.webp" alt=""></button>
-                        <button id="editNoteBtn"><img src="img/pencil-icon.webp" alt=""></button>
-                        <button id="pinNoteBtn"><img src="img/copy-icon.webp" alt=""></button>
+                        <button id="deleteNoteBtn" title="Delete"><img src="img/recycle-bin-icon.webp" alt=""></button>
+                        <button id="editNoteBtn" title="Edit"><img src="img/pencil-icon.webp" alt=""></button>
+                        <button id="pinNoteBtn" title="Copy"><img src="img/copy-icon.webp" alt=""></button>
                     </div>
                 </div>
                 <div class="noteCard">
-                    <textarea name="noteTitle" id="noteTitle" cols="30" rows="10"></textarea>
-                    <textarea name="note" id="note" cols="30" rows="10"></textarea>
+                    <textarea name="noteTitle" id="noteTitle" cols="30" rows="10" readonly></textarea>
+                    <textarea name="note" id="note" cols="30" rows="10" readonly></textarea>
                     <div class="myNoteBtns">
-                        <button id="deleteNoteBtn"><img src="img/recycle-bin-icon.webp" alt=""></button>
-                        <button id="editNoteBtn"><img src="img/pencil-icon.webp" alt=""></button>
-                        <button id="pinNoteBtn"><img src="img/copy-icon.webp" alt=""></button>
+                        <button id="deleteNoteBtn" title="Delete"><img src="img/recycle-bin-icon.webp" alt=""></button>
+                        <button id="editNoteBtn" title="Edit"><img src="img/pencil-icon.webp" alt=""></button>
+                        <button id="pinNoteBtn" title="Copy"><img src="img/copy-icon.webp" alt=""></button>
                     </div>
                 </div>
                 <div class="noteCard">
-                    <textarea name="noteTitle" id="noteTitle" cols="30" rows="10"></textarea>
-                    <textarea name="note" id="note" cols="30" rows="10"></textarea>
+                    <textarea name="noteTitle" id="noteTitle" cols="30" rows="10" readonly></textarea>
+                    <textarea name="note" id="note" cols="30" rows="10" readonly></textarea>
                     <div class="myNoteBtns">
-                        <button id="deleteNoteBtn"><img src="img/recycle-bin-icon.webp" alt=""></button>
-                        <button id="editNoteBtn"><img src="img/pencil-icon.webp" alt=""></button>
-                        <button id="pinNoteBtn"><img src="img/copy-icon.webp" alt=""></button>
+                        <button id="deleteNoteBtn" title="Delete"><img src="img/recycle-bin-icon.webp" alt=""></button>
+                        <button id="editNoteBtn" title="Edit"><img src="img/pencil-icon.webp" alt=""></button>
+                        <button id="pinNoteBtn" title="Copy"><img src="img/copy-icon.webp" alt=""></button>
                     </div>
                 </div>
                 <div class="noteCard">
-                    <textarea name="noteTitle" id="noteTitle" cols="30" rows="10"></textarea>
-                    <textarea name="note" id="note" cols="30" rows="10"></textarea>
+                    <textarea name="noteTitle" id="noteTitle" cols="30" rows="10" readonly></textarea>
+                    <textarea name="note" id="note" cols="30" rows="10" readonly></textarea>
                     <div class="myNoteBtns">
-                        <button id="deleteNoteBtn"><img src="img/recycle-bin-icon.webp" alt=""></button>
-                        <button id="editNoteBtn"><img src="img/pencil-icon.webp" alt=""></button>
-                        <button id="pinNoteBtn"><img src="img/copy-icon.webp" alt=""></button>
+                        <button id="deleteNoteBtn" title="Delete"><img src="img/recycle-bin-icon.webp" alt=""></button>
+                        <button id="editNoteBtn" title="Edit"><img src="img/pencil-icon.webp" alt=""></button>
+                        <button id="pinNoteBtn" title="Copy"><img src="img/copy-icon.webp" alt=""></button>
                     </div>
                 </div>
                 <div class="noteCard">
-                    <textarea name="noteTitle" id="noteTitle" cols="30" rows="10"></textarea>
-                    <textarea name="note" id="note" cols="30" rows="10"></textarea>
+                    <textarea name="noteTitle" id="noteTitle" cols="30" rows="10" readonly></textarea>
+                    <textarea name="note" id="note" cols="30" rows="10" readonly></textarea>
                     <div class="myNoteBtns">
-                        <button id="deleteNoteBtn"><img src="img/recycle-bin-icon.webp" alt=""></button>
-                        <button id="editNoteBtn"><img src="img/pencil-icon.webp" alt=""></button>
-                        <button id="pinNoteBtn"><img src="img/copy-icon.webp" alt=""></button>
+                        <button id="deleteNoteBtn" title="Delete"><img src="img/recycle-bin-icon.webp" alt=""></button>
+                        <button id="editNoteBtn" title="Edit"><img src="img/pencil-icon.webp" alt=""></button>
+                        <button id="pinNoteBtn" title="Copy"><img src="img/copy-icon.webp" alt=""></button>
                     </div>
                 </div>
                 <div class="noteCard">
-                    <textarea name="noteTitle" id="noteTitle" cols="30" rows="10"></textarea>
-                    <textarea name="note" id="note" cols="30" rows="10"></textarea>
+                    <textarea name="noteTitle" id="noteTitle" cols="30" rows="10" readonly></textarea>
+                    <textarea name="note" id="note" cols="30" rows="10" readonly></textarea>
                     <div class="myNoteBtns">
-                        <button id="deleteNoteBtn"><img src="img/recycle-bin-icon.webp" alt=""></button>
-                        <button id="editNoteBtn"><img src="img/pencil-icon.webp" alt=""></button>
-                        <button id="pinNoteBtn"><img src="img/copy-icon.webp" alt=""></button>
+                        <button id="deleteNoteBtn" title="Delete"><img src="img/recycle-bin-icon.webp" alt=""></button>
+                        <button id="editNoteBtn" title="Edit"><img src="img/pencil-icon.webp" alt=""></button>
+                        <button id="pinNoteBtn" title="Copy"><img src="img/copy-icon.webp" alt=""></button>
                     </div>
                 </div>
                 <div class="noteCard">
-                    <textarea name="noteTitle" id="noteTitle" cols="30" rows="10"></textarea>
-                    <textarea name="note" id="note" cols="30" rows="10"></textarea>
+                    <textarea name="noteTitle" id="noteTitle" cols="30" rows="10" readonly></textarea>
+                    <textarea name="note" id="note" cols="30" rows="10" readonly></textarea>
                     <div class="myNoteBtns">
-                        <button id="deleteNoteBtn"><img src="img/recycle-bin-icon.webp" alt=""></button>
-                        <button id="editNoteBtn"><img src="img/pencil-icon.webp" alt=""></button>
-                        <button id="pinNoteBtn"><img src="img/copy-icon.webp" alt=""></button>
+                        <button id="deleteNoteBtn" title="Delete"><img src="img/recycle-bin-icon.webp" alt=""></button>
+                        <button id="editNoteBtn" title="Edit"><img src="img/pencil-icon.webp" alt=""></button>
+                        <button id="pinNoteBtn" title="Copy"><img src="img/copy-icon.webp" alt=""></button>
                     </div>
                 </div>
                 <div class="noteCard">
-                    <textarea name="noteTitle" id="noteTitle" cols="30" rows="10"></textarea>
-                    <textarea name="note" id="note" cols="30" rows="10"></textarea>
+                    <textarea name="noteTitle" id="noteTitle" cols="30" rows="10" readonly></textarea>
+                    <textarea name="note" id="note" cols="30" rows="10" readonly></textarea>
                     <div class="myNoteBtns">
-                        <button id="deleteNoteBtn"><img src="img/recycle-bin-icon.webp" alt=""></button>
-                        <button id="editNoteBtn"><img src="img/pencil-icon.webp" alt=""></button>
-                        <button id="pinNoteBtn"><img src="img/copy-icon.webp" alt=""></button>
+                        <button id="deleteNoteBtn" title="Delete"><img src="img/recycle-bin-icon.webp" alt=""></button>
+                        <button id="editNoteBtn" title="Edit"><img src="img/pencil-icon.webp" alt=""></button>
+                        <button id="pinNoteBtn" title="Copy"><img src="img/copy-icon.webp" alt=""></button>
                     </div>
                 </div>
-                <div class="noteCard">
-                    <textarea name="noteTitle" id="noteTitle" cols="30" rows="10"></textarea>
-                    <textarea name="note" id="note" cols="30" rows="10"></textarea>
-                    <div class="myNoteBtns">
-                        <button id="deleteNoteBtn"><img src="img/recycle-bin-icon.webp" alt=""></button>
-                        <button id="editNoteBtn"><img src="img/pencil-icon.webp" alt=""></button>
-                        <button id="pinNoteBtn"><img src="img/copy-icon.webp" alt=""></button>
-                    </div>
-                </div>
-                <div class="noteCard">
-                    <textarea name="noteTitle" id="noteTitle" cols="30" rows="10"></textarea>
-                    <textarea name="note" id="note" cols="30" rows="10"></textarea>
-                    <div class="myNoteBtns">
-                        <button id="deleteNoteBtn"><img src="img/recycle-bin-icon.webp" alt=""></button>
-                        <button id="editNoteBtn"><img src="img/pencil-icon.webp" alt=""></button>
-                        <button id="pinNoteBtn"><img src="img/copy-icon.webp" alt=""></button>
-                    </div>
-                </div>
-                <div class="noteCard">
-                    <textarea name="noteTitle" id="noteTitle" cols="30" rows="10"></textarea>
-                    <textarea name="note" id="note" cols="30" rows="10"></textarea>
-                    <div class="myNoteBtns">
-                        <button id="deleteNoteBtn"><img src="img/recycle-bin-icon.webp" alt=""></button>
-                        <button id="editNoteBtn"><img src="img/pencil-icon.webp" alt=""></button>
-                        <button id="pinNoteBtn"><img src="img/copy-icon.webp" alt=""></button>
-                    </div>
-                </div>
-                
+
             </div>
         </main>
     </div>
+
+    <ul id="hamMenu" class="display-none">
+        <li id="hamTitle">notevista.online</li>
+        <a href="home.html">
+            <li>Home</li>
+        </a>
+        <a href="notes.html">
+            <li>My Notes</li>
+        </a>
+        <a href="about.html">
+            <li>About</li>
+        </a>
+        <a href="contact.html">
+            <li>Contact us</li>
+        </a>
+    </ul>
+
+    <script>
+        const addNoteBtn = document.getElementById("addNoteBtn");
+        const createNoteBtn = document.getElementById("createNoteBtn");
+        const createNewBox_1 = document.getElementById("createNewBox-1")
+        const createNewBox_2 = document.getElementById("createNewBox-2")
+
+        function displayToggleFunc() {
+            createNewBox_1.classList.toggle("display-none")
+            createNewBox_2.classList.toggle("display-none")
+            createNoteBtn.classList.toggle("display-none")
+            addNoteBtn.classList.toggle("display-none")
+        }
+        createNewBox_2.addEventListener("click", displayToggleFunc)
+        createNoteBtn.addEventListener("click", displayToggleFunc)
+        addNoteBtn.addEventListener("click", () => {
+            displayToggleFunc()
+        })
+
+    </script>
+
+    <script src="js/hamburgerMenu.js"></script>
 </body>
+
 </html>

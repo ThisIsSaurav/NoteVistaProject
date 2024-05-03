@@ -1,10 +1,10 @@
 #hamMenu {
     /* border : 1px solid red; */
-    background-color: #000000e3;
-    width: 60%;
+    background-color: #000000;
+    width: 100%;
     border-radius: 0px 12px 12px 0px;
     position: absolute;
-    top: 60px;
+    top: 95px;
     left: -240px;
     color: white;
 }
@@ -31,7 +31,7 @@
     list-style: none;
     font-family: var(--my-font);
     color: var(--yellow-web-color);
-    font-size: 30px;
+    font-size: 20px;
     background-color: black;
     border-radius: 0px 12px 0px 0px;
 }
@@ -47,7 +47,7 @@
 
 @keyframes hamAniOut {
     0%{
-        left:0px'
+        left:0px;
     }
     100%{
         left: -240px;
