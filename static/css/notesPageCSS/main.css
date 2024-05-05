@@ -87,13 +87,13 @@
 }
 
 
-#noteTitle {
+.noteTitle {
     width: 200px;
     height: 20px;
     resize: none;
     padding: 5px;
 }
-#note{
+.note{
     width: 200px;
     height: 120px;
     resize: none;
