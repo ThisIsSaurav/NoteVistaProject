@@ -31,7 +31,8 @@
 
             <div class="menu-bar">
                 <ul>
-                    <li id="searchSection"><img src="../static/img/search-icon.webp" alt=""><input type="search" placeholder="Search your notes..."></li>
+                    <li id="searchSection"><img src="../static/img/search-icon.webp" alt=""><input type="search"
+                            placeholder="Search your notes..."></li>
                     <a href="home.html" target="_blank" class="noteNavItems">
                         <li>Home</li>
                     </a>
@@ -64,19 +65,7 @@
                 <button id="addNoteBtn" class="display-none" title="Add notes">Add</button>
             </div>
             <span class="noteHeading">Your Notes :-</span>
-            <div class="myAllNotesSection" id="myAllNotesSection">
-                
-                <div class="noteCard" id="noteCard-1">
-                    <textarea name="noteTitle" class="noteTitle" id="note_1_title" cols="30" rows="10" readonly ></textarea>
-                    <textarea name="note" class="note" cols="30" id="note_1" rows="10" readonly></textarea>
-                    <div class="myNoteBtns">
-                        <button id="deleteNoteBtn-1" title="Delete" onclick="deleteMyNote(this.id)"><img src="img/recycle-bin-icon.webp" alt=""></button>
-                        <button id="editNoteBtn-1" title="Edit"><img src="img/pencil-icon.webp" alt=""></button>
-                        <button id="pinNoteBtn-1" title="Copy"><img src="img/copy-icon.webp" alt=""></button>
-                    </div>
-                </div>
-              
-            </div>
+            <div class="myAllNotesSection" id="myAllNotesSection"></div>
         </main>
     </div>
 
@@ -95,6 +84,12 @@
             <li>Contact us</li>
         </a>
     </ul>
+
+    <!-- Warning message container -->
+    <div id="warningContainer" class="warning-container hidden">
+        <p>Please enter both note title and note content.</p>
+        <button id="goBackBtn" class="go-back-btn">Go Back</button>
+    </div>
 
     <script>
         const addNoteBtn = document.getElementById("addNoteBtn");

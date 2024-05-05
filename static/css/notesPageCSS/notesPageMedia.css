@@ -59,6 +59,13 @@
        text-align: center;
        padding: 12px 0px;
     }
+
+    .noteTitle {
+        width: 94%;
+    }
+    .note{
+        width: 94%;
+    }
 }
 
 @media screen and (max-width: 540px) {
